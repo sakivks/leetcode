@@ -3,7 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	root := &TreeNode{1, &TreeNode{2, &TreeNode{3, nil, nil}, &TreeNode{4, nil, nil}}, &TreeNode{2, &TreeNode{4, nil, nil}, &TreeNode{3, nil, nil}}}
+	root := &TreeNode{1,
+		&TreeNode{2,
+			&TreeNode{3, nil, nil},
+			&TreeNode{4, nil, nil}},
+		&TreeNode{2,
+			&TreeNode{4, nil, nil},
+			&TreeNode{3, nil, nil}}}
 	fmt.Println(isSymmetric(root)) // should print true
 }
 
